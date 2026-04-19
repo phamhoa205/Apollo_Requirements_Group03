@@ -24,23 +24,75 @@ body:
     id: description
     attributes:
       label: Mô tả
-      placeholder:
-        Cho phép học viên/phụ huynh đăng ký khóa học trực tuyến thông qua hệ thống.
-        Bao gồm:
-        - Xem danh sách và chi tiết khóa học
-        - Kiểm tra điều kiện (trình độ, độ tuổi, sĩ số)
-        - Ghi nhận đăng ký và cập nhật lớp
-        - Xử lý ngoại lệ (lớp đầy, hồ sơ không hợp lệ)
-        - Gửi thông báo xác nhận
-        Liên kết Use Case: UC-01
+      placeholder: Học viên hoặc phụ huynh đăng ký tham gia khóa học trực tuyến. Hệ thống kiểm tra điều kiện và ghi nhận đăng ký.
     validations:
       required: true
 
-  - type: dropdown
-    id: priority
+  - type: textarea
+    id: Basic Flow
     attributes:
-      label: Mức ưu tiên
-      options:
-        - Cao
-        - Trung
-        - Thấp
+      label: Basic Flow
+      placeholder:
+        1. Học viên/Phụ huynh đăng nhập hệ thống. 
+        2. Chọn khóa học từ danh sách mở đăng ký.
+        3. Xem thông tin chi tiết khóa học. 
+        4. Xác nhận đăng ký và điền thông tin bổ sung.
+        5. Hệ thống kiểm tra điều kiện (trình độ, sĩ số lớp).
+        6. Ghi nhận đăng ký và cập nhật danh sách lớp.
+        7. Gửi thông báo xác nhận qua email/app.
+    validations:
+      required: true
+
+  - type: textarea
+    id: Alternative Flows
+    attributes:
+      label: Alternative Flows
+      placeholder:
+          2.2.1 Lớp học đã đầy sĩ số
+         • Hệ thống đề xuất lớp thay thế cùng khóa học.
+         • Học viên/Phụ huynh chọn lớp mới hoặc hủy.
+         2.2.2 Hồ sơ chưa hợp lệ 
+        • Yêu cầu cập nhật hồ sơ (thiếu thông tin, tuổi không phù hợp).
+         • Sau khi cập nhật → quay lại bước 5.
+    validations:
+      required: true
+
+  - type: textarea
+    id: Special Requirements
+    attributes:
+      label: Special Requirements
+      placeholder:
+        - Bảo mật thông tin cá nhân theo Luật Bảo vệ Dữ liệu.
+        - Thời gian xử lý đăng ký < 3 giây. 
+        - Form responsive trên mobile/desktop.
+    validations:
+      required: true
+
+  - type: textarea
+    id: PreConditions
+    attributes:
+      label: PreConditions
+      placeholder:
+        - Đã đăng nhập hệ thống.
+        - Có khóa học đang mở đăng ký.
+    validations:
+      required: true
+
+  - type: textarea
+    id: PostConditions
+    attributes:
+      label: PostConditions
+      placeholder:
+        - Đăng ký được ghi nhận. 
+        - Học viên được thêm vào lớp hoặc danh sách chờ. 
+        - Thông báo xác nhận được gửi.
+    validations:
+      required: true
+
+  - type: textarea
+    id: Extension Points
+    attributes:
+      label: Extension Points
+      placeholder: 6.1 Thanh toán đăng ký (sau bước 6 nếu khóa học yêu cầu thanh toán trước).
+    validations:
+      required: true
