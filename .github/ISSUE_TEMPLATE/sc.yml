@@ -8,8 +8,19 @@ body:
     id: sc_id
     attributes:
       label: ID UC
-      placeholder: UC-01: Đăng ký khóa học
+      placeholder: UC-01: đăng ký khóa học
+    validations:
+      required: true
+
+  - type: input
+    id: sc_id
+    attributes:
       label: ID SC
       placeholder: SC-01-01
     validations:
       required: true
+
+
+
+
+
