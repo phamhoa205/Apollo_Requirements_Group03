@@ -15,7 +15,7 @@ body:
   - type: input
     id: name
     attributes:
-      label: Tên UC
+      label: name_UC
       placeholder: Đăng ký khóa học trực tuyến
     validations:
       required: true
@@ -29,10 +29,10 @@ body:
       required: true
 
   - type: textarea
-    id: Basic Flow
+    id: Basic_Flow
     attributes:
       label: Basic Flow
-      placeholder:
+      placeholder: |
         1. Học viên/Phụ huynh đăng nhập hệ thống. 
         2. Chọn khóa học từ danh sách mở đăng ký.
         3. Xem thông tin chi tiết khóa học. 
@@ -44,10 +44,10 @@ body:
       required: true
 
   - type: textarea
-    id: Alternative Flows
+    id: Alternative_Flows
     attributes:
       label: Alternative Flows
-      placeholder:
+      placeholder: |
           2.2.1 Lớp học đã đầy sĩ số
          • Hệ thống đề xuất lớp thay thế cùng khóa học.
          • Học viên/Phụ huynh chọn lớp mới hoặc hủy.
@@ -58,10 +58,10 @@ body:
       required: true
 
   - type: textarea
-    id: Special Requirements
+    id: Special_Requirements
     attributes:
       label: Special Requirements
-      placeholder:
+      placeholder: |
         - Bảo mật thông tin cá nhân theo Luật Bảo vệ Dữ liệu.
         - Thời gian xử lý đăng ký < 3 giây. 
         - Form responsive trên mobile/desktop.
@@ -72,7 +72,7 @@ body:
     id: PreConditions
     attributes:
       label: PreConditions
-      placeholder:
+      placeholder: |
         - Đã đăng nhập hệ thống.
         - Có khóa học đang mở đăng ký.
     validations:
@@ -82,7 +82,7 @@ body:
     id: PostConditions
     attributes:
       label: PostConditions
-      placeholder:
+      placeholder: |
         - Đăng ký được ghi nhận. 
         - Học viên được thêm vào lớp hoặc danh sách chờ. 
         - Thông báo xác nhận được gửi.
