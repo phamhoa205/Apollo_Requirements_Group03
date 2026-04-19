@@ -1,7 +1,7 @@
 name: Create Feat
-description: product-level feature
+description: Functional behavior of the system (use case)
 title: "Đăng ký khóa học trực tuyến"
-labels: ["FEAT"]
+labels: ["UC"]
 
 body:
   - type: input
