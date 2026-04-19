@@ -13,9 +13,9 @@ body:
       required: true
 
   - type: input
-    id: name
+    id: uc_name
     attributes:
-      label: name_UC
+      label: Tên UC
       placeholder: Đăng ký khóa học trực tuyến
     validations:
       required: true
@@ -29,13 +29,13 @@ body:
       required: true
 
   - type: textarea
-    id: Basic_Flow
+    id: basic_flow
     attributes:
       label: Basic Flow
       placeholder: |
-        1. Học viên/Phụ huynh đăng nhập hệ thống. 
+        1. Học viên/Phụ huynh đăng nhập hệ thống.
         2. Chọn khóa học từ danh sách mở đăng ký.
-        3. Xem thông tin chi tiết khóa học. 
+        3. Xem thông tin chi tiết khóa học.
         4. Xác nhận đăng ký và điền thông tin bổ sung.
         5. Hệ thống kiểm tra điều kiện (trình độ, sĩ số lớp).
         6. Ghi nhận đăng ký và cập nhật danh sách lớp.
@@ -44,32 +44,33 @@ body:
       required: true
 
   - type: textarea
-    id: Alternative_Flows
+    id: alternative_flows
     attributes:
       label: Alternative Flows
       placeholder: |
-          2.2.1 Lớp học đã đầy sĩ số
-         • Hệ thống đề xuất lớp thay thế cùng khóa học.
-         • Học viên/Phụ huynh chọn lớp mới hoặc hủy.
-         2.2.2 Hồ sơ chưa hợp lệ 
-        • Yêu cầu cập nhật hồ sơ (thiếu thông tin, tuổi không phù hợp).
-         • Sau khi cập nhật → quay lại bước 5.
+        2.2.1 Lớp học đã đầy sĩ số
+        - Hệ thống đề xuất lớp thay thế cùng khóa học.
+        - Học viên/Phụ huynh chọn lớp mới hoặc hủy.
+
+        2.2.2 Hồ sơ chưa hợp lệ
+        - Yêu cầu cập nhật hồ sơ (thiếu thông tin, tuổi không phù hợp).
+        - Sau khi cập nhật → quay lại bước 5.
     validations:
       required: true
 
   - type: textarea
-    id: Special_Requirements
+    id: special_requirements
     attributes:
       label: Special Requirements
       placeholder: |
         - Bảo mật thông tin cá nhân theo Luật Bảo vệ Dữ liệu.
-        - Thời gian xử lý đăng ký < 3 giây. 
+        - Thời gian xử lý đăng ký < 3 giây.
         - Form responsive trên mobile/desktop.
     validations:
       required: true
 
   - type: textarea
-    id: PreConditions
+    id: preconditions
     attributes:
       label: PreConditions
       placeholder: |
@@ -79,20 +80,21 @@ body:
       required: true
 
   - type: textarea
-    id: PostConditions
+    id: postconditions
     attributes:
       label: PostConditions
       placeholder: |
-        - Đăng ký được ghi nhận. 
-        - Học viên được thêm vào lớp hoặc danh sách chờ. 
+        - Đăng ký được ghi nhận.
+        - Học viên được thêm vào lớp hoặc danh sách chờ.
         - Thông báo xác nhận được gửi.
     validations:
       required: true
 
   - type: textarea
-    id: Extension Points
+    id: extension_points
     attributes:
       label: Extension Points
-      placeholder: 6.1 Thanh toán đăng ký (sau bước 6 nếu khóa học yêu cầu thanh toán trước).
+      placeholder: |
+        6.1 Thanh toán đăng ký (sau bước 6 nếu khóa học yêu cầu thanh toán trước).
     validations:
       required: true
