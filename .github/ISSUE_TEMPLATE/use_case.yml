@@ -1,0 +1,46 @@
+name: Create Feat
+description: product-level feature
+title: "Đăng ký khóa học trực tuyến"
+labels: ["FEAT"]
+
+body:
+  - type: input
+    id: feat_id
+    attributes:
+      label: ID Feat
+      placeholder: FEAT-01
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Tên Feat
+      placeholder: Đăng ký khóa học trực tuyến
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả
+      placeholder: |
+        Cho phép học viên/phụ huynh đăng ký khóa học trực tuyến thông qua hệ thống.
+        Bao gồm:
+        - Xem danh sách và chi tiết khóa học
+        - Kiểm tra điều kiện (trình độ, độ tuổi, sĩ số)
+        - Ghi nhận đăng ký và cập nhật lớp
+        - Xử lý ngoại lệ (lớp đầy, hồ sơ không hợp lệ)
+        - Gửi thông báo xác nhận
+        Liên kết Use Case: UC-01
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Mức ưu tiên
+      options:
+        - Cao
+        - Trung
+        - Thấp
