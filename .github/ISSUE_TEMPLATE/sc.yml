@@ -28,7 +28,7 @@ body:
     validations:
       required: true
 
-  - type: textera
+  - type: textarea
     id: mota
     attributes:
       label: Mô tả
@@ -37,7 +37,7 @@ body:
       required: true
 
   - type: input
-    id: Inputmẫu
+    id: Inputmau
     attributes:
       label: Input mẫu
       placeholder: Tuổi 10, trình độ A1, cơ sở Hà Nội (còn 5 chỗ)
