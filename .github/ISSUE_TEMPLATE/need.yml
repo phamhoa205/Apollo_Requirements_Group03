@@ -56,7 +56,15 @@ body:
     id: proposed_by
     attributes:
       label: Người đề xuất
-      placeholder: Phạm Minh Hòa
+      options:
+        - Ban giám đốc
+        - Quản lý đào tạo
+        - Nhân viên học vụ
+        - Giảng viên
+        - Học viên
+        - Bộ phận IT
+        - Phụ huynh
+        - Ban giám đốc/ Phụ huynh
 
   - type: dropdown
     id: priority
